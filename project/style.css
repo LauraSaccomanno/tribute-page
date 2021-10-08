@@ -1,0 +1,446 @@
+/******** Font ********/
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+/******** Colors ********/
+:root {
+    --primary-color: #FFEE32;
+    --secondary-color: #000000;
+    --terzary-color:  #ffffff;
+}
+
+/******** General ********/
+*  {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Domine', serif;
+}
+
+/******** General Classes ********/
+
+.d-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+.resize {
+    width: 50%;
+}
+
+.yellow-b {
+    background: var(--primary-color);
+}
+
+.black-b {
+    background: var(--secondary-color);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.separator {
+    width: 25px;
+    border-radius: 1px;
+    height: 4px;
+    background: var(--secondary-color);
+    margin: 16px 0 24px;
+}
+
+/******** Title Section ********/
+#title-section {
+    padding: 20px;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/******** Photo Band Section ********/
+#img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img-caption {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    padding: 4px 8px 12px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+#image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 800px;
+    margin: 8px;
+}
+
+/******** Tribute Info Section ********/
+#tribute-info img {
+    position: absolute;
+    z-index: -1;
+}
+
+#tribute-info h2 {
+    position: relative;
+    z-index: 1;
+    margin-top: 88px;
+}
+
+.geometrical-el {
+    position: relative;
+    margin-right: 10px;
+}
+.circle {
+    background: var(--primary-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: relative;
+    box-shadow: 2px 1px 1px #6E736E;
+}
+
+.rectangular {
+    background: var(--primary-color);
+    width: 6px;
+    height: 100%;
+    position: relative;
+    margin: -1px auto;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 2px 1px 1px #6E736E;
+}
+
+.content-info {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 28px;
+    letter-spacing: 1px;
+}
+
+.data-info {
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    color: #333533;
+    background: var(--primary-color);
+    max-width: 110px;
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+.text-info {
+    color: #6E736E;
+    line-height: 20px;
+}
+
+/******** Album Section ********/
+#album h3 {
+    font-size: 16px;
+    padding: 5px;    
+}
+
+.container-album {
+    width: 100%;
+    max-width: 573px;
+    margin: 0 auto;
+}
+
+.d-flex-album-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 270px;
+    border-radius: 7px;
+    margin: 8px;
+}
+
+.number-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--secondary-color);
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    max-width: 55px;
+    text-align: center;
+}
+
+.number {
+    color: var(--primary-color);
+    font-size: 30px;
+    padding: 5px;
+}
+
+.content-box {
+    border: 1px solid;
+    border-radius: 0 5px 5px 0;
+    width: 100%;
+    max-width: 207px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.content-box:hover {
+    background: black;
+    color: var(--primary-color);
+}
+
+.content-box p {
+    padding: 0 5px;
+}
+
+/******** Quotes Section ********/
+#quotes .separator {
+    background: var(--primary-color);
+}
+blockquote {
+    color: var(--terzary-color);
+    margin: 36px 0;
+    line-height: 24px;
+}
+
+blockquote p {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 32px;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.quote-end {
+    text-align: end;
+}
+
+#quotes h2 {
+    color: var(--primary-color);
+}
+
+#box-quotes {
+    max-width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+cite {
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+}
+
+/******** Other Info Section ********/
+.content-other-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 310px;
+    padding: 12px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+}
+
+#tribute-link {
+    background: black;
+    color: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  #tribute-link:hover {
+    background: var(--primary-color);
+    color: var(--seconday-color);
+  }
+
+.content-other-info img {
+    width: 100%;
+    margin: 16px 0 18px;
+}
+
+.img-border {
+    border-radius: 3px;
+}
+
+/******** Footer ********/
+footer {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    padding: 12px 0 7px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+
+/******** Media Query ********/
+@media screen and (max-width: 320px) {
+    .content-box {
+        max-width: 160px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #album {
+        margin-top: 24px;
+    }   
+}
+
+@media screen and (min-width: 410px) {
+    .content {
+        padding: 60px;
+    }
+    #tribute-info h2 {
+        margin-top: 110px;
+    } 
+} 
+
+@media screen and (max-width: 478px) {
+    .content-other-info {
+        max-width: 240px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .content-other-info img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #tribute-info h2 {
+        margin-top: 150px;
+    }    
+}
+
+
+@media screen and (min-width: 635px) {
+    #image {
+        width: 60%;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .separator {
+        width: 40px;
+    }
+    .card {
+        height: 65px;
+    }
+}
+
+@media screen and (min-width: 692px) {
+    .d-flex-album-card {
+        justify-content: flex-start;
+    }   
+}
+
+@media screen and (max-width: 700px) {
+    #quotes .d-flex {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+}
+
+@media screen and (min-width: 730px) {
+    #tribute-info h2 {
+        margin-top: 180px;
+    }
+    .card {
+        margin: 16px 8px;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1000px) {
+    #title-section {
+        padding: 85px;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    h2 {
+        font-size: 40px;
+    }
+    .separator {
+        width: 55px;
+    }
+    #image {
+        width: 40%;
+    } 
+    #tribute-info img {
+        width: 40%;
+    }  
+}
+
+@media screen and (min-width: 978px) {
+    .container-album {
+        max-width: 860px;
+    }   
+}
+
+@media screen and (min-width: 1000px) {
+    #title-section {
+        height: 100vh;
+    }
+    #title {
+        margin-bottom: 36px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #tribute-info h2 {
+        margin-top: 240px;
+    }
+    
+}
